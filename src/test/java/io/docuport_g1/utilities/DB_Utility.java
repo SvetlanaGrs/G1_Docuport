@@ -38,7 +38,7 @@ public class DB_Utility {
 
         // PLEASE MAKE SURE YOU UPDATE THE IP ADDRESS TO THE ONE YOU HAVE CURRENTLY
         String url = "jdbc:oracle:thin:@44.201.130.124:1521:XE" ;
-        //String url = ConfigurationReader.getProperty("hr.db.url"); // Since we have added config.properties and ConfigReader, I can get directly from there as well
+        //String url = ConfigurationReader.getProperty("hr.db.url"); // Since we have added configuration.properties and ConfigReader, I can get directly from there as well
         String username =  "hr";
         String password =  "hr";
 

@@ -213,6 +213,18 @@ public class BrowserUtils {
                 .map(x->x.getText())
                 .collect(Collectors.toList());
     }
+    /**
+     * Performs a pause
+     *
+     * @param seconds
+     */
+    public static void waitFor(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     public static List<String> getElementsTextWithStream2(List<WebElement> elements){
         return elements.stream()
                 .map(WebElement::getText)
@@ -291,6 +303,7 @@ public class BrowserUtils {
         } catch (IOException e){
             LOG.error(e.getMessage(), e.getCause());
         }
+
 
     }
 }

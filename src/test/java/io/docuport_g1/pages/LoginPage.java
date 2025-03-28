@@ -27,6 +27,21 @@ public class LoginPage {
     @FindBy(xpath = "//span[.=' Continue ']")
     public WebElement continueButton;
 
+    @FindBy(xpath = "//div[@role='listbox']//a[1]")
+    public WebElement homeIcon;
+
+    @FindBy(xpath = "//a[@href='/1099-form']")
+    public WebElement form1099;
+
+    @FindBy(xpath = "//div[@class='d-flex align-center']")
+    public WebElement bgDropdown;
+
+    @FindBy(xpath = "//span[contains(text(),'Log out')]")
+    public WebElement logOutButton;
+    
+
+
+
     public void insertField(String field, String input){
         switch (field.toLowerCase().trim()){
             case "username":
@@ -95,14 +110,15 @@ public class LoginPage {
     }
 
     public void login2(String username, String password){
-        BrowserUtils.waitForClickable(loginButton, 10);
+        BrowserUtils.waitForClickable(loginButton, 2);
         usernameInput.clear();
         usernameInput.sendKeys(username);
         passwordInput.clear();
         passwordInput.sendKeys(password);
-        if (BrowserUtils.waitForVisibility(continueButton, 10).isDisplayed()) {
+        if (BrowserUtils.waitForVisibility(continueButton, 2).isDisplayed()) {
             continueButton.click();
         }
     }
+
 
 }
