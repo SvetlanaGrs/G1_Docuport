@@ -7,7 +7,7 @@ Feature: Docuport create new client like advisor for Personal account
     And user should be able to see the home for advisor
 
 
-  @newPersonalClient @docuportDb
+  @newPersonalClient @docuportDb @smoke
 
   Scenario: crete a new personal client
     And user create a new personal client

@@ -1,6 +1,6 @@
 Feature: Advisor Cannot Create Client Without Required Fields
 
-  @AA @ui
+  @AA @ui @smoke
   Scenario Outline: As Advisor create a new <clientType> client with empty first and last name inputs
 
     Given user is on Docuport login page

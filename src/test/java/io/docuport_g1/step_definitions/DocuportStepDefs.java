@@ -24,8 +24,8 @@ public class DocuportStepDefs extends BasePage {
         loginPage.login(Driver.getDriver(),usertype);
 
     }
-    @Given("the user navigates to {string} page")
-    public void the_user_navigates_to_page(String moduleName) {
+    @Given("user navigates to {string} page")
+    public void user_navigates_to_page(String moduleName) {
         userPage.clickModule(moduleName);
     }
     @When("the user gets total user count")

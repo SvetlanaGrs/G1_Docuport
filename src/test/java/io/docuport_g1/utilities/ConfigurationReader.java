@@ -11,7 +11,7 @@ public class ConfigurationReader {
         try{
             String path = "configuration.properties";
             //FileInputStream input = new FileInputStream(path);
-            FileInputStream input = new FileInputStream("config.properties");
+            FileInputStream input = new FileInputStream("configuration.properties");
             properties = new Properties();
             properties.load(input);
         } catch (Exception e){
