@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/html-reports/cucumber-report.html",
-                  "json:target/json-reports/json-report.json"},
+                "json:target/cucumber.json"},
         features ="@target/rerun.txt",
         glue = "io/docuport_g1/step_definitions",
         monochrome = true,
